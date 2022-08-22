@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  mongodb:
+    image: mongodb
+    build: .
+    environment:
+      - NODE_ENV=production
+    ports: 
+      - 3000:3000
+    volumes:
+      - db:/data/db
+  app:
+    depends_on:
+      - mongodb
+    build: .
+    ports:
+      - 27017:27017
+    stdin_open: true
+    tty: true
+volumes:
+  db:
