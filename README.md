@@ -13,10 +13,8 @@
     - [3.2. Environment variables](#32-environment-variables)
   - [4. Endpoints](#4-endpoints)
     - [Índice](#índice)
-  - [- DELETE - /banner/<banner_id>](#--delete---bannerbanner_id)
   - [4.1. **Customer**](#41-customer)
   - [Endpoints](#endpoints)
-  - [| DELETE | /Customer/<customerId> | Delete Customer from database                |](#-delete--customercustomerid--delete-customer-from-database----------------)
     - [4.1.1. **Create Customer**](#411-create-customer)
     - [`/customer`](#customer)
     - [Example of request:](#example-of-request)
@@ -141,6 +139,7 @@ yarn dev
   - [GET - /banner/<banner_id>](#423-list-one-banner)
   - [PATCH - /banner/<banner_id>](#424-update-banner)
   - [DELETE - /banner/<banner_id>](#425-delete-banner)
+
 ---
 
 ## 4.1. **Customer**
@@ -149,24 +148,24 @@ yarn dev
 
 The Customer object is defined as:
 
-| Field      | Type    | Description                           |
-| ---------- | ------- | ------------------------------------- |
-| id         | string  | Customer's unique identifier          |
-| name       | string  | Username                              |
-| email      | string  | Customer's email                      |
-| password   | string  | Customer access password              |
-| phone      | string  | Customer contact                      |
-
+| Field    | Type   | Description                  |
+| -------- | ------ | ---------------------------- |
+| id       | string | Customer's unique identifier |
+| name     | string | Username                     |
+| email    | string | Customer's email             |
+| password | string | Customer access password     |
+| phone    | string | Customer contact             |
 
 ## Endpoints
 
-| Method | Endpoint               | Responsability                               |
-| ------ | ---------------        | ---------------------------------------------|
-| POST   | /Customer              | Create Customer                              |
-| GET    | /Customer              | List all Customers                           |
-| GET    | /Customer/<customerId> | List the Customer with the corresponding id  |
-| PATCH  | /Customer/<customerId> | Update Customer data                         |
-| DELETE | /Customer/<customerId> | Delete Customer from database                |
+| Method | Endpoint               | Responsability                              |
+| ------ | ---------------------- | ------------------------------------------- |
+| POST   | /Customer              | Create Customer                             |
+| GET    | /Customer              | List all Customers                          |
+| GET    | /Customer/<customerId> | List the Customer with the corresponding id |
+| PATCH  | /Customer/<customerId> | Update Customer data                        |
+| DELETE | /Customer/<customerId> | Delete Customer from database               |
+
 ---
 
 ### 4.1.1. **Create Customer**
@@ -213,13 +212,13 @@ Content-type: application/json
 
 ```json
 {
-	"name": "Ana",
-	"email": "ana@mail.com",
-	"phone": "4112344548",
-	"password": "$2a$10$JvgmJb0k.eNygKKuF1M.t.ugzgDTMMjL8UhdE3E.AVojT1JQisG3e",
-	"banners": [],
-	"_id": "630124aeced32d99eaf41103",
-	"__v": 0
+  "name": "Ana",
+  "email": "ana@mail.com",
+  "phone": "4112344548",
+  "password": "$2a$10$JvgmJb0k.eNygKKuF1M.t.ugzgDTMMjL8UhdE3E.AVojT1JQisG3e",
+  "banners": [],
+  "_id": "630124aeced32d99eaf41103",
+  "__v": 0
 }
 ```
 
@@ -230,7 +229,6 @@ Content-type: application/json
 | 400 bad request | Email already registered |
 
 ---
-
 
 ### 4.1.2. **List all Customers**
 
@@ -261,24 +259,24 @@ Empty
 
 ```json
 [
-	{
-		"_id": "630124aeced32d99eaf41103",
-		"name": "Ana",
-		"email": "ana@mail.com",
-		"phone": "4112344548",
-		"password": "$2a$10$JvgmJb0k.eNygKKuF1M.t.ugzgDTMMjL8UhdE3E.AVojT1JQisG3e",
-		"banners": [],
-		"__v": 0
-	},
-	{
-		"_id": "63012563ced32d99eaf41107",
-		"name": "Maria",
-		"email": "Maria@mail.com",
-		"phone": "213423451",
-		"password": "$2a$10$ugwuPskW9RBLwCRJYbmKd.G2iI1s8cpGRVNwSzxPLMgN4EyLxy8he",
-		"banners": [],
-		"__v": 0
-	}
+  {
+    "_id": "630124aeced32d99eaf41103",
+    "name": "Ana",
+    "email": "ana@mail.com",
+    "phone": "4112344548",
+    "password": "$2a$10$JvgmJb0k.eNygKKuF1M.t.ugzgDTMMjL8UhdE3E.AVojT1JQisG3e",
+    "banners": [],
+    "__v": 0
+  },
+  {
+    "_id": "63012563ced32d99eaf41107",
+    "name": "Maria",
+    "email": "Maria@mail.com",
+    "phone": "213423451",
+    "password": "$2a$10$ugwuPskW9RBLwCRJYbmKd.G2iI1s8cpGRVNwSzxPLMgN4EyLxy8he",
+    "banners": [],
+    "__v": 0
+  }
 ]
 ```
 
@@ -300,9 +298,9 @@ Content-type: application/json
 
 ### Request parameters:
 
-| Parameter     | Type   | Description                  |
-| ------------- | ------ | -----------------------------|
-| customerId    | string | customerId unique identifier |
+| Parameter  | Type   | Description                  |
+| ---------- | ------ | ---------------------------- |
+| customerId | string | customerId unique identifier |
 
 ### Request body:
 
@@ -318,20 +316,20 @@ Empty
 
 ```json
 {
-	"_id": "630124aeced32d99eaf41103",
-	"name": "Ana",
-	"email": "ana@mail.com",
-	"phone": "4112344548",
-	"password": "$2a$10$JvgmJb0k.eNygKKuF1M.t.ugzgDTMMjL8UhdE3E.AVojT1JQisG3e",
-	"banners": [],
-	"__v": 0
+  "_id": "630124aeced32d99eaf41103",
+  "name": "Ana",
+  "email": "ana@mail.com",
+  "phone": "4112344548",
+  "password": "$2a$10$JvgmJb0k.eNygKKuF1M.t.ugzgDTMMjL8UhdE3E.AVojT1JQisG3e",
+  "banners": [],
+  "__v": 0
 }
 ```
 
 ### Possible errors:
 
-| Error code    | Description    |
-| ------------- | -------------- |
+| Error code    | Description        |
+| ------------- | ------------------ |
 | 404 Not found | Customer not found |
 
 ---
@@ -387,8 +385,8 @@ Content-type: application/json+
 
 ### Possible errors:
 
-| Error code | Description    |
-| ---------- | -------------- |
+| Error code | Description        |
+| ---------- | ------------------ |
 | 404        | Customer not found |
 
 ---
@@ -410,9 +408,9 @@ Content-type: application/json
 
 ### Request parameters:
 
-| Parameter     | Type   | Description                  |
-| ------------- | ------ | ---------------------------- |
-| customerId    | string | Customer's unique identifier |
+| Parameter  | Type   | Description                  |
+| ---------- | ------ | ---------------------------- |
+| customerId | string | Customer's unique identifier |
 
 ### Request body:
 
@@ -432,8 +430,8 @@ Empty
 
 ### Possible errors:
 
-| Error code | Description    |
-| ---------- | -------------- |
+| Error code | Description        |
+| ---------- | ------------------ |
 | 404        | Customer not found |
 
 ---
@@ -444,13 +442,13 @@ Empty
 
 The Banners object is defined as:
 
-| Field       | Type   | Description                        |
-| ----------- | ------ | ---------------------------------- |
-| id          | string | Banner's unique identifier         |
-| name        | string | Name banner                        |
-| endAt       | string | Banner the banner ends             |
-| startAt     | string | Banner creation date               |
-| status      | boolean| whether the banner finished or not |
+| Field   | Type    | Description                        |
+| ------- | ------- | ---------------------------------- |
+| id      | string  | Banner's unique identifier         |
+| name    | string  | Name banner                        |
+| endAt   | string  | Banner the banner ends             |
+| startAt | string  | Banner creation date               |
+| status  | boolean | whether the banner finished or not |
 
 ## Endpoints
 
@@ -510,22 +508,23 @@ Content-type: application/json
 ```
 
 ```json
- {
-	"name": "Dogs",
-	"image": "Dogs.png",
-	"endAt": "1669777200000",
-	"startAt": "22/08/2022 11:54:25",
-	"status": false,
-	"customerId": "630124aeced32d99eaf41103",
-	"_id": "630398cc4597e9f739fc4de8",
-	"__v": 0
- }
+{
+  "name": "Dogs",
+  "image": "Dogs.png",
+  "endAt": "1669777200000",
+  "startAt": "22/08/2022 11:54:25",
+  "status": false,
+  "customerId": "630124aeced32d99eaf41103",
+  "_id": "630398cc4597e9f739fc4de8",
+  "__v": 0
+}
 ```
+
 ### Possible errors:
 
-| Error code      | Description               |
-| --------------- | ------------------------- |
-| 404 bad request | Customer not found!       |
+| Error code      | Description         |
+| --------------- | ------------------- |
+| 404 bad request | Customer not found! |
 
 ---
 
@@ -558,25 +557,25 @@ Empty
 ```json
 [
   {
-		"_id": "6303996b4597e9f739fc4def",
-		"name": "Dogs",
-		"image": "Dogs.png",
-		"endAt": "1669777200000",
-		"startAt": "22/08/2022 11:54:25",
-		"status": false,
-		"customerId": "630124aeaed32d99eaf41103",
-		"__v": 0
-	},
- 	{
-		"_id": "63039c9244480270bbe3b055",
-		"name": "Cat",
-		"image": "Cat.png",
-		"endAt": "1672455600000",
-		"startAt": "22/08/2022 12:05:38",
-		"status": false,
-		"customerId": "630124aeced32d99eaf41103",
-		"__v": 0
-	}
+    "_id": "6303996b4597e9f739fc4def",
+    "name": "Dogs",
+    "image": "Dogs.png",
+    "endAt": "1669777200000",
+    "startAt": "22/08/2022 11:54:25",
+    "status": false,
+    "customerId": "630124aeaed32d99eaf41103",
+    "__v": 0
+  },
+  {
+    "_id": "63039c9244480270bbe3b055",
+    "name": "Cat",
+    "image": "Cat.png",
+    "endAt": "1672455600000",
+    "startAt": "22/08/2022 12:05:38",
+    "status": false,
+    "customerId": "630124aeced32d99eaf41103",
+    "__v": 0
+  }
 ]
 ```
 
@@ -603,9 +602,9 @@ Content-type: application/json
 
 ### Request parameters:
 
-| Parameter  | Type   | Description               |
-| ---------- | ------ | ------------------------- |
-| bannerId   | string | banner's unique identifier|
+| Parameter | Type   | Description                |
+| --------- | ------ | -------------------------- |
+| bannerId  | string | banner's unique identifier |
 
 ### Request body:
 
@@ -620,23 +619,23 @@ Empty
 ```
 
 ```json
-  {
-    "_id": "63039c9244480270bbe3b055",
-    "name": "Cat",
-    "image": "Cat.png",
-    "endAt": "1672455600000",
-    "startAt": "22/08/2022 12:05:38",
-    "status": false,
-    "customerId": "630124aeced32d99eaf41103",
-    "__v": 0
-  }
+{
+  "_id": "63039c9244480270bbe3b055",
+  "name": "Cat",
+  "image": "Cat.png",
+  "endAt": "1672455600000",
+  "startAt": "22/08/2022 12:05:38",
+  "status": false,
+  "customerId": "630124aeced32d99eaf41103",
+  "__v": 0
+}
 ```
 
 ### Possible errors:
 
-| Error code      | Description               |
-| --------------- | ------------------------- |
-| 404 bad request | Banner not found!         |
+| Error code      | Description       |
+| --------------- | ----------------- |
+| 404 bad request | Banner not found! |
 
 ---
 
@@ -657,9 +656,9 @@ Content-type: application/json
 
 ### Request parameters:
 
-| Parameter  | Type   | Description               |
-| ---------- | ------ | ------------------------- |
-| bannerId   | string | banner's unique identifier|
+| Parameter | Type   | Description                |
+| --------- | ------ | -------------------------- |
+| bannerId  | string | banner's unique identifier |
 
 ### Request body:
 
@@ -677,22 +676,22 @@ Content-type: application/json
 
 ```json
 {
-	"_id": "63039c9244480270bbe3b055",
-	"name": "Rabbit",
-	"image": "Cat.png",
-	"endAt": "1672455600000",
-	"startAt": "22/08/2022 12:05:38",
-	"status": false,
-	"customerId": "630124aeced32d99eaf41103",
-	"__v": 0
+  "_id": "63039c9244480270bbe3b055",
+  "name": "Rabbit",
+  "image": "Cat.png",
+  "endAt": "1672455600000",
+  "startAt": "22/08/2022 12:05:38",
+  "status": false,
+  "customerId": "630124aeced32d99eaf41103",
+  "__v": 0
 }
 ```
 
 ### Possible errors:
 
-| Error code | Description           |
-| ---------- | --------------------- |
-| 404        | Banner not found!     |
+| Error code | Description       |
+| ---------- | ----------------- |
+| 404        | Banner not found! |
 
 ---
 
@@ -713,9 +712,9 @@ Content-type: application/json
 
 ### Request parameters:
 
-| Parameter | Type    | Description               |
-| --------- | ------- | ------------------------- |
-| bannerId  | string  | Banner's unique identifier|
+| Parameter | Type   | Description                |
+| --------- | ------ | -------------------------- |
+| bannerId  | string | Banner's unique identifier |
 
 ### Request body:
 
@@ -732,4 +731,3 @@ Content-type: application/json
 ```json
   Empty
 ```
-
