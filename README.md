@@ -51,11 +51,11 @@ Project overview, some of the technologies used.
 - [Yup](https://yarnpkg.com/package/yup)
 - [Docker](https://www.docker.com/)
 
-## 3. Quick Start
+## 2. Quick Start
 
 [ Back ](#contents)
 
-### 3.1. Installing Dependencies
+### 2.1. Installing Dependencies
 
 Clone the project on your machine and install the dependencies with the command:
 
@@ -63,7 +63,7 @@ Clone the project on your machine and install the dependencies with the command:
 yarn
 ```
 
-### 3.2. Environment variables
+### 2.2. Environment variables
 
 Then, create a file **.env**, copying file format **.env.example**.
 Configure your environment variables with your Postgres credentials.
@@ -76,7 +76,7 @@ Run:
 yarn dev
 ```
 
-## 4. Endpoints
+## 3. Endpoints
 
 [ Back ](#contents)
 
@@ -97,7 +97,7 @@ yarn dev
 
 ---
 
-## 4.1. **Customer**
+## 3.1. **Customer**
 
 [ Back to endpoints ](#4-endpoints)
 
@@ -123,7 +123,7 @@ The Customer object is defined as:
 
 ---
 
-### 4.1.1. **Create Customer**
+### 3.1.1. **Create Customer**
 
 [ Back to endpoints ](#4-endpoints)
 
@@ -185,7 +185,7 @@ Content-type: application/json
 
 ---
 
-### 4.1.2. **List all Customers**
+### 3.1.2. **List all Customers**
 
 [ Back to endpoints ](#4-endpoints)
 
@@ -237,7 +237,7 @@ Empty
 
 ---
 
-### 4.1.3. **List customer by id**
+### 3.1.3. **List customer by id**
 
 [ Back to endpoints ](#4-endpoints)
 
@@ -289,7 +289,7 @@ Empty
 
 ---
 
-### 4.1.4. **Update customer data**
+### 3.1.4. **Update customer data**
 
 [ Back to endpoints ](#4-endpoints)
 
@@ -391,7 +391,7 @@ Empty
 
 ---
 
-## 4.2. **Banner**
+## 3.2. **Banner**
 
 [ Back to endpoints ](#4-endpoints)
 
@@ -417,7 +417,7 @@ The Banners object is defined as:
 
 ---
 
-### 4.2.1. **Create Banner**
+### 3.2.1. **Create Banner**
 
 [ Back to endpoints ](#4-endpoints)
 
@@ -483,7 +483,7 @@ Content-type: application/json
 
 ---
 
-### 4.2.2. **List all banners**
+### 3.2.2. **List all banners**
 
 [ Back to endpoints ](#4-endpoints)
 
@@ -540,7 +540,7 @@ None, the maximum that can return an empty list.
 
 ---
 
-### 4.2.3. **List specific banner**
+### 3.2.3. **List specific banner**
 
 [ Back to endpoints ](#4-endpoints)
 
@@ -594,7 +594,7 @@ Empty
 
 ---
 
-### 4.2.4. **Update banner**
+### 3.2.4. **Update banner**
 
 [ Back to endpoints ](#4-endpoints)
 
@@ -650,7 +650,7 @@ Content-type: application/json
 
 ---
 
-### 4.2.5. **Delete banner**
+### 3.2.5. **Delete banner**
 
 [ Back to endpoints ](#4-endpoints)
 
