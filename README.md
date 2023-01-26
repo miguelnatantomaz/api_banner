@@ -99,7 +99,7 @@ yarn dev
 
 ## 3.1. **Customer**
 
-[ Back to endpoints ](#4-endpoints)
+[ Back to endpoints ](#3-endpoints)
 
 The Customer object is defined as:
 
@@ -125,7 +125,7 @@ The Customer object is defined as:
 
 ### 3.1.1. **Create Customer**
 
-[ Back to endpoints ](#4-endpoints)
+[ Back to endpoints ](#3-endpoints)
 
 ### `/customer`
 
@@ -187,7 +187,7 @@ Content-type: application/json
 
 ### 3.1.2. **List all Customers**
 
-[ Back to endpoints ](#4-endpoints)
+[ Back to endpoints ](#3-endpoints)
 
 ### `/customer`
 
@@ -239,7 +239,7 @@ Empty
 
 ### 3.1.3. **List customer by id**
 
-[ Back to endpoints ](#4-endpoints)
+[ Back to endpoints ](#3-endpoints)
 
 ### `/customer/<customerId>`
 
@@ -291,7 +291,7 @@ Empty
 
 ### 3.1.4. **Update customer data**
 
-[ Back to endpoints ](#4-endpoints)
+[ Back to endpoints ](#3-endpoints)
 
 ### `/customer/<customerId>`
 
@@ -348,7 +348,7 @@ Content-type: application/json+
 
 ### 4.1.5. **Delete customer**
 
-[ Back to endpoints ](#4-endpoints)
+[ Back to endpoints ](#3-endpoints)
 
 ### `/customer/<customerId>`
 
@@ -393,7 +393,7 @@ Empty
 
 ## 3.2. **Banner**
 
-[ Back to endpoints ](#4-endpoints)
+[ Back to endpoints ](#3-endpoints)
 
 The Banners object is defined as:
 
@@ -419,7 +419,7 @@ The Banners object is defined as:
 
 ### 3.2.1. **Create Banner**
 
-[ Back to endpoints ](#4-endpoints)
+[ Back to endpoints ](#3-endpoints)
 
 ### `/banner`
 
@@ -485,7 +485,7 @@ Content-type: application/json
 
 ### 3.2.2. **List all banners**
 
-[ Back to endpoints ](#4-endpoints)
+[ Back to endpoints ](#3-endpoints)
 
 ### `/banner`
 
@@ -542,7 +542,7 @@ None, the maximum that can return an empty list.
 
 ### 3.2.3. **List specific banner**
 
-[ Back to endpoints ](#4-endpoints)
+[ Back to endpoints ](#3-endpoints)
 
 ### `/banner/<banner_id>`
 
@@ -596,7 +596,7 @@ Empty
 
 ### 3.2.4. **Update banner**
 
-[ Back to endpoints ](#4-endpoints)
+[ Back to endpoints ](#3-endpoints)
 
 ### `/banner/<banner_id>`
 
@@ -652,7 +652,7 @@ Content-type: application/json
 
 ### 3.2.5. **Delete banner**
 
-[ Back to endpoints ](#4-endpoints)
+[ Back to endpoints ](#3-endpoints)
 
 ### `/banner/<banner_id>`
 
