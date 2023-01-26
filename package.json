@@ -6,7 +6,7 @@
   "author": "Miguel Natan Tomaz <miguelnatantomaz@hotmail.com>",
   "license": "MIT",
   "engines": {
-    "node": "14.x"
+    "node": "18.x"
   },
   "scripts": {
     "dev": "./node_modules/.bin/ts-node-dev src/server.ts",
