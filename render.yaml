@@ -1,8 +1,0 @@
-services:
-  - type: web
-    env: node
-    name: api_banner
-    repo: https://github.com/miguelnatantomaz/api_banner.git
-    buildCommand: yarn
-    startCommand: docker-compose up
-    
